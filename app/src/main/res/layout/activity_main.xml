@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:srcCompat="@drawable/zonguldak" />
+
+    <TextView
+        android:id="@+id/sehir_ismi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Şehir İsmi"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ilk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ilk"
+            android:text="İlk" />
+
+        <Button
+            android:id="@+id/geri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="geri"
+            android:text="Önceki" />
+
+        <Button
+            android:id="@+id/ileri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ileri"
+            android:text="Sonraki" />
+
+        <Button
+            android:id="@+id/son"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="son"
+            android:text="Son" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/degistirme_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/ileri_geri_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Süreyi bu alana girin..."
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/baslat_durdur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="baslat_durdur"
+        android:text="Başlat" />
+
+</LinearLayout>
